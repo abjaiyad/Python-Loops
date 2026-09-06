@@ -21,7 +21,7 @@ for _ in range(n):
         if num > largest:
             largest = num
 
-        if num < smallest:
+        if smallest is not None and num < smallest:
             smallest = num
 
     print("Running sum:", total)
